@@ -6,7 +6,7 @@ import MarkdownComponent from '../components/Markdown'
 class Help extends React.Component {
   render() {
     let file = null
-    try { file = require(`../../gamedata/descriptions/pages/help.md`) } catch(e){}
+    try { file = require(`../../gamedata/descriptions_zh/pages/help.md`) } catch(e){}
     return (
       <div className="page-container">
         <h2 className="title">Ethernaut Help</h2>

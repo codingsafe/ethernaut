@@ -37,10 +37,10 @@ class Level extends React.Component {
     const showCompletedDescription = constants.SHOW_ALL_COMPLETE_DESCRIPTIONS || levelCompleted
 
     let description = null
-    try { description = require(`../../gamedata/descriptions/levels/${level.description}`) } catch(e){ console.log(e) }
+    try { description = require(`../../gamedata/descriptions_zh/levels/${level.description}`) } catch(e){ console.log(e) }
     let completedDescription = null
     if(showCompletedDescription && level.completedDescription) {
-      try { completedDescription = require(`../../gamedata/descriptions/levels/${level.completedDescription}`) } catch(e){ console.log(e) }
+      try { completedDescription = require(`../../gamedata/descriptions_zh/levels/${level.completedDescription}`) } catch(e){ console.log(e) }
     }
     let sourcesFile = null
     try { sourcesFile = require(`../../contracts/levels/${level.instanceContract}`) } catch(e){ console.log(e) }
